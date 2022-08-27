@@ -1,1 +1,9 @@
-<app-home-page></app-home-page>
+<div class="app-home">
+  <app-sidebar></app-sidebar>
+
+  <app-bredcrumb></app-bredcrumb>
+
+  <main class="main" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </main>
+</div>

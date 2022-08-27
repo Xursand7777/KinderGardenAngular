@@ -1,0 +1,7 @@
+.card-content{
+  border-top: 5px solid #0d6efd;
+  border-radius: 5px;
+  padding: 2vh 2vw;
+  overflow-y: auto;
+  height: calc(100vh - 95px);
+}

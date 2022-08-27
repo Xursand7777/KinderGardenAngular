@@ -1,0 +1,30 @@
+.bg-nav{
+  width: 50px;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar__items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+img{
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidebar__item-active{
+  display: block;
+}
+
+.sidebar__item{
+  display: none;
+}

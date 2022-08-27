@@ -20,7 +20,7 @@
         <!-- password input -->
         <div class="form-outline mb-4">
           <i class="fa-solid fa-eye-slash me-2 trailing"></i>
-          <input type="password" class="form-control" formControlName="password">
+          <input type="password" class="form-control" formControlName="pass">
           <label class="form-label">Пароль</label>
           <div class="form-notch">
             <div class="form-notch-leading"></div>
@@ -43,13 +43,13 @@
 
         <div class="password-input__errors">
           <span class="alert alert-danger"
-                *ngIf="form.get('password').invalid && form.get('password').touched"
+                *ngIf="form.get('pass').invalid && form.get('pass').touched"
           >
-            <span *ngIf="form.get('password').errors['required']">Пароль не должен быть пустым</span>
+            <span *ngIf="form.get('pass').errors['required']">Пароль не должен быть пустым</span>
             <span
-              *ngIf="form.get('password').errors['minlength'] && form.get('password').errors['minlength']['requiredLength']">
-              Пароль должен быть {{form.get('password').errors['minlength']['requiredLength']}} символов
-              Сейчас {{ form.get('password').errors['minlength']['actualLength'] }}
+              *ngIf="form.get('pass').errors['minlength'] && form.get('pass').errors['minlength']['requiredLength']">
+              Пароль должен быть {{form.get('pass').errors['minlength']['requiredLength']}} символов
+              Сейчас {{ form.get('pass').errors['minlength']['actualLength'] }}
             </span>
           </span>
         </div>
